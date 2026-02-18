@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FinanTech | Dashboard</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Dashboard de Controle Financeiro</h1>
+
+    <div class="container-cards">
+        <div class="card">
+            <h3>Entradas</h3>
+            <p class="valor ganhos">R$ 5.000,00</p>
+        </div>
+        <div class="card">
+            <h3>Saídas</h3>
+            <p class="valor gastos">R$ 1.200,00</p>
+        </div>
+        <div class="card">
+            <h3>Saldo Total</h3>
+            <p class="valor saldo">R$ 3.800,00</p>
+        </div>
+    </div>
+
+    <form action="cadastro.php" method="POST">
+        <fieldset>
+            <legend>Cadastrar Nova Despesa</legend>
+
+            <div class="item-formulario">
+                <label>Nome da Despesa:</label>
+                <input type="text" name="nome_despesa" placeholder="Ex: Aluguel" required>
+            </div>
+
+            <div class="item-formulario">
+                <label>Valor (R$):</label>
+                <input type="number" name="valor" step="0.01" required>
+            </div>
+
+            <div class="item-formulario">
+                <label>Categoria:</label>
+                <select name="categoria" required>
+                    <option value="" disabled selected>Escolha uma categoria</option>
+                    <option value="lazer">Lazer</option>
+                    <option value="saude">Saúde</option>
+                    <option value="educacao">Educação</option>
+                    <option value="alimentacao">Alimentação</option>
+                </select>
+            </div>
+
+            <div class="item-formulario">
+                <label>Data do Pagamento:</label>
+                <input type="date" name="data_pagamento" required>
+            </div>
+
+            <button type="submit">Salvar Despesa</button>
+        </fieldset>
+    </form>
+
+    <footer>
+        <p>&copy;2026, Todos os direitos reservados. Desenvolvido por <a href="https://github.com/marcianonee" target="_blank">Marciano Bifa Có</a></p>
+    </footer>
+</body>
+</html>
