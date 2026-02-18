@@ -15,3 +15,4 @@ Um painel financeiro moderno e funcional desenvolvido para facilitar o gerenciam
 
 ### 📁 Como testar
 Para visualizar a parte funcional do PHP, é necessário rodar o projeto em um ambiente de servidor local (como XAMPP ou WampServer).
+<img width="1117" height="820" alt="image" src="https://github.com/user-attachments/assets/014a48f8-0e9e-4ceb-af6e-859cc54cd13e" />
